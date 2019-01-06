@@ -1,4 +1,4 @@
-# docker-jupiter-python-notebook
+# Work with jupiter python notebook with help of docker container.
 
 1. Build docker container
 ```
