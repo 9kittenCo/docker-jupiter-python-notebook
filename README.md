@@ -1,18 +1,15 @@
 # Work with jupiter python notebook with help of docker container.
 
 1. Build docker container
-```
+```bash
 docker build . -t jpnotebook/anaconda
 ```
 
 2. Create sub directory for Jupiter notebook files
-```
+```bash
 mkdir ./noteboooks 
 ```
 3. Launch docker container
-```
-docker run -i -t -p 8888:8888 -v \
-        $(pwd)/notebooks:/opt/Code \
-        jpnotebook/anaconda \
-        /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/opt/Code --ip='*' --port=8888 --no-browser --allow-root"
+```bash
+sh start.sh
 ```
